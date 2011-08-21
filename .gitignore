@@ -1,0 +1,7 @@
+WebToolkit/bin/*
+WebToolkit/obj/*
+Samples.Web/bin/*
+Samples.Web/obj/*
+WebToolkit.suo
+Thumbs.db
+*.pdb
