@@ -21,6 +21,7 @@
                     <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
                     <li><%: Html.ActionLink("About", "About", "Home")%></li>
                     <li><%: Html.ActionLink("Zip", "Index", "Zip")%></li>
+                    <li><%: Html.ActionLink("FTP", "Index", "Ftp")%></li>
                 </ul>
             </div>
         </div>
