@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.dll" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-20" time="23:44:39">
+<test-results name="C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.dll" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-20" time="23:51:05">
   <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug" machine-name="USUARIO" user="Usuario" user-domain="USUARIO" />
   <culture-info current-culture="pt-BR" current-uiculture="pt-BR" />
-  <test-suite type="Assembly" name="C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.dll" executed="True" result="Inconclusive" success="False" time="0.047" asserts="0">
+  <test-suite type="Assembly" name="C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.dll" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WebToolkit" executed="True" result="Inconclusive" success="False" time="0.047" asserts="0">
+      <test-suite type="Namespace" name="WebToolkit" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Inconclusive" success="False" time="0.047" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Zip" executed="True" result="Inconclusive" success="False" time="0.047" asserts="0">
+              <test-suite type="Namespace" name="Zip" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="ZipTest" executed="True" result="Inconclusive" success="False" time="0.047" asserts="0" />
+                  <test-suite type="TestFixture" name="ZipTest" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
                 </results>
               </test-suite>
             </results>
