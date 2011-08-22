@@ -34,9 +34,9 @@ namespace WebToolkit.FTP
         /// </summary>
         /// <param name="path">FTP folder, such as "files/2011". Don't start or end with a slash, it will be put automatically.</param>
         /// <returns>Status of the operation.</returns>
-        public List<string> GetFiles(string path)
+        public List<FTPFile> GetFiles(string path)
         {
-            List<string> files = new List<string>();
+            List<FTPFile> files = new List<FTPFile>();
             if (Host.Scheme == Uri.UriSchemeFtp)
             {
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(string.Format("{0}/{1}", Host, path));
@@ -52,8 +52,12 @@ namespace WebToolkit.FTP
                     {
                         string result = reader.ReadToEnd();
                         result = result.Replace("\r\n","|");
-                        files.AddRange(result.Split('|').ToList<string>());
-                        
+                        string[] lines = result.Split('|');
+                        foreach (string item in lines)
+                        {
+                            if (!string.IsNullOrEmpty(item))
+                                files.Add(new FTPFile(item));
+                        }                        
                     }
                 }
                 finally
@@ -132,6 +136,22 @@ namespace WebToolkit.FTP
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(string.Format("{0}/{1}/{2}", Host, path, fileName));
                 request.Credentials = new NetworkCredential(UserName, Password);
                 request.Method = WebRequestMethods.Ftp.DeleteFile;
+
+
+                FtpWebResponse response = (FtpWebResponse)request.GetResponse();
+                status = response.StatusCode == FtpStatusCode.CommandOK;
+            }
+            return status;
+        }
+
+        public bool CreateDirectory(string path, string directoryName)
+        {
+            bool status = false;
+            if (Host.Scheme == Uri.UriSchemeFtp)
+            {
+                FtpWebRequest request = (FtpWebRequest)WebRequest.Create(string.Format("{0}/{1}/{2}", Host, path, directoryName));
+                request.Credentials = new NetworkCredential(UserName, Password);
+                request.Method = WebRequestMethods.Ftp.MakeDirectory;
 
 
                 FtpWebResponse response = (FtpWebResponse)request.GetResponse();
