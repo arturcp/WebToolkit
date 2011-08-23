@@ -18,17 +18,6 @@ namespace WebToolkit.FTP
 
         public FTPFile(string line)
         {
-            //Regex regex = new Regex(@"^(?<dir>[\-ld])(?<permission>([\-r][\-w][\-xs]){3})\s+(?<filecode>\d+)\s+(?<owner>\w+)\s+(?<group>\w+)\s+(?<size>\d+)\s+(?<timestamp>((?<month>\w{3})\s+(?<day>\d{2})\s+(?<hour>\d{1,2}):(?<minute>\d{2}))|((?<month>\w{3})\s+(?<day>\d{1,2})\s+(?<year>\d{4})))\s+(?<name>.+)$");
-            Regex regex = new Regex(@"^(?<dir>[\-ld])(?<permission>([\-r][\-w][\-xs]){3})\s+(?<filecode>\d+)\s+(?<owner>\w+)\s+(?<group>\w+)\s+(?<size>\d+)\s+(?<timestamp>((?<month>\w{3})\s+(?<day>\d{2})\s+(?<hour>\d{1,2}):(?<minute>\d{2}))|((?<month>\w{3})\s+(?<day>\d{2})\s+(?<year>\d{4})))\s+(?<name>.+)$");
-            //MatchCollection matches =  regex.Matches(line);
-            var matches = regex.Match(line);
-
-            foreach (var match in matches.Groups)
-            {
-                var x = match;
-            }
-
-
             line = Regex.Replace(line, @"\s+", " ");
             string[] parts = line.Split(' ');
             Permissions = parts[0];
@@ -39,7 +28,17 @@ namespace WebToolkit.FTP
             Month = parts[5];
             Day = parts[6];
             Time = parts[7];
-            Name = parts[8];                 
+
+            Name = string.Empty;
+            for (int i = 8; i < parts.Length; i++)
+            {
+                if (i == parts.Length - 1)
+                    Name += parts[i];
+                else
+                    Name += parts[i] + " ";
+
+            }
+              
         }
 
         public override string ToString()
