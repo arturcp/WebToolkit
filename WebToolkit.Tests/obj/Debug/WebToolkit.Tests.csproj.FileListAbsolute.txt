@@ -10,3 +10,15 @@ C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\obj\Debug
 C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\Ionic.Zip.dll
 C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.dll
 C:\Documents and Settings\Usuario\projects\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.pdb
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.Tests.pdb
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\Ionic.Zip.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\nunit.framework.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\nunit.mocks.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\pnunit.framework.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\WebToolkit.pdb
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\bin\Debug\nunit.framework.xml
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\obj\Debug\WebToolkit.Tests.dll
+C:\Users\arprado\GitProjetcs\WebToolkit\WebToolkit.Tests\obj\Debug\WebToolkit.Tests.pdb

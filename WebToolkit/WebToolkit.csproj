@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="FTP\FTPFile.cs" />
     <Compile Include="FTP\Utility.cs" />
+    <Compile Include="Log\TextLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zip\Utility.cs" />
   </ItemGroup>
