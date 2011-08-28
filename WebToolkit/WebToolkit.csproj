@@ -51,6 +51,7 @@
     <Compile Include="FTP\FTPFile.cs" />
     <Compile Include="FTP\Utility.cs" />
     <Compile Include="Index\AccentedAnalyzer.cs" />
+    <Compile Include="Index\IndexField.cs" />
     <Compile Include="Index\IndexManager.cs" />
     <Compile Include="Index\IndexSettings.cs" />
     <Compile Include="Log\TextLog.cs" />
