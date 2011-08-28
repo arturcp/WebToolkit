@@ -59,15 +59,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebToolkit\WebToolkit.csproj">
-      <Project>{D503C53E-93A8-401B-826E-5A26C3EC7908}</Project>
-      <Name>WebToolkit</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Factory\TextFile1.txt" />
     <Content Include="Factory\TextFile2.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
