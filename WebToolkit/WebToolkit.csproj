@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter\SafeConvert.cs" />
     <Compile Include="FTP\FTPFile.cs" />
     <Compile Include="FTP\Utility.cs" />
     <Compile Include="Index\AccentedAnalyzer.cs" />
